@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    {% extends "index.html" %}
+
+    {% block content %}
+    <main class="container py-5">
+        <section class="card carf-body">
+            <h1 class="display-1 text-center">Django App</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sint dignissimos ad incidunt illo quia commodi voluptatum perferendis eius, illum laborum pariatur nesciunt, rem repudiandae nobis, maxime ipsam similique omnis!</p>
+            <div class="text-center">
+                <a class="btn btn-primary" href="{% url 'signin' %}">Singnin</a>
+                <a class="btn btn-dark" href="{% url 'signup' %}">Singnup</a>
+            </div>
+
+        </section>
+    </main>
+    {% endblock %}
+</body>
+</html>
